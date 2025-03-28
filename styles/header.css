@@ -1,0 +1,24 @@
+.header__content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navigation__list {
+    display: flex;
+    gap: 32px;
+    margin-top: 70px;
+}
+
+.navigation__item {
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.navigation__item a {
+    color:black;
+}
+
+.header__logo {
+    margin-top: 53px;
+}
