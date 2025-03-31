@@ -1,0 +1,36 @@
+.start-screen__content {
+    display: flex;
+}
+
+.start-screen__info {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 0 80px;
+
+}
+
+.start-screen__content h1 {
+    font-size: 60px;
+    line-height: 60px;
+
+}
+
+.start-screen__content p {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 40px;
+    text-transform: uppercase;
+
+}
+
+.start-screen__content button {
+    width: 224px;
+    height: 54px;
+    background: var(--basic-green);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 52px;
+    text-transform: uppercase;
+
+}

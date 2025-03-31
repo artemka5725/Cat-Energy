@@ -1,13 +1,13 @@
 .header__content {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    padding-top: 53px;
 }
 
 .navigation__list {
     display: flex;
     gap: 32px;
-    margin-top: 70px;
 }
 
 .navigation__item {
@@ -15,10 +15,11 @@
     line-height: 100%;
     text-transform: uppercase;
 }
+
 .navigation__item a {
-    color:black;
+    color: black;
 }
 
 .header__logo {
-    margin-top: 53px;
+
 }
