@@ -1,0 +1,14 @@
+.manual__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.manual__content h2 {
+    font-size: 60px;
+
+}
+.manual__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 94px;
+}
