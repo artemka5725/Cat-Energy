@@ -1,5 +1,24 @@
 .start-screen__content {
     display: flex;
+    position: relative;
+}
+
+.start-screen__content img {
+    position: relative;
+    z-index: 0;
+}
+
+.background-cat {
+    background-image: url("../images/index-background-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 47.5%;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
 }
 
 .start-screen__info {
@@ -11,13 +30,11 @@
 
 .start-screen__content h1 {
     font-size: 60px;
-    line-height: 60px;
 
 }
 
 .start-screen__content p {
     font-size: 20px;
-    line-height: 20px;
     margin-top: 40px;
     text-transform: uppercase;
 
