@@ -1,0 +1,88 @@
+.example__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.example__title {
+    width: 100%;
+    font-size: 60px;
+    padding: 76px 0;
+}
+
+.example__content-secondary {
+    background-color: var(--basic-gray);
+}
+
+.example__container {
+    display: flex;
+}
+
+.example__info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    max-width: 436px;
+}
+
+.example__info p:not(.example__results p,.example__expenses p) {
+    line-height: 1.5;
+    color: var(--special-dark-grey);
+    font-family: 'Arial';
+}
+
+.example__results {
+    display: flex;
+    gap: 42px;
+    margin-top: 70px;
+    font-size: 30px;
+    line-height: 37px;
+
+}
+
+.example__results p {
+    border: 2.5px solid #CDCDCD;
+    border-radius: 5px;
+    padding: 15px 57px 20px 57px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.example__results p:first-of-type:after {
+    content: "снижение веса";
+    width: 130px;
+    height: 50px;
+    background-color: var(--basic-gray);
+    color: var(--special-dark-grey);
+    font-family: 'Arial';
+    font-size: 14px;
+    text-align: center;
+    text-transform: lowercase;
+    position: absolute;
+    bottom: -32px;
+    left: 17px;
+
+}
+
+.example__results p:last-of-type:after {
+    content: "затрачено времени";
+    width: 163px;
+    height: 50px;
+    background-color: var(--basic-gray);
+    color: var(--special-dark-grey);
+    font-family: 'Arial';
+    font-size: 14px;
+    text-transform: lowercase;
+    text-align: center;
+    position: absolute;
+    bottom: -32px;
+    left: 28px;
+
+}
+
+.example__expenses {
+    display: flex;
+    gap: 63px;
+    margin-top: 55px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
