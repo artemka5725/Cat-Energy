@@ -1,0 +1,42 @@
+.maps {
+    position: relative;
+    background-color: var(--basic-gray);
+}
+
+.maps__contacts {
+    display: flex;
+    gap: 87px;
+    width: 570px;
+    height: 201px;
+    background-color: #FFFFFF;
+    padding: 65px 90px 60px 76px;
+    position: absolute;
+    top: 95px;
+}
+
+.maps__contacts h4 {
+    font-size: 20px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.maps__address {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.maps__contacts p {
+    font-family: 'Arial';
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--special-dark-grey);
+
+}
+
+.maps__pin {
+    position: absolute;
+    top: 135px;
+    right: 500px;
+
+}

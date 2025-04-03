@@ -1,0 +1,13 @@
+footer {
+    background-color:var(--basic-gray) ;
+}
+.footer__content {
+    display: flex;
+    padding: 58px 0;
+    justify-content: space-between;
+}
+.footer__socials {
+    display: flex;
+    gap: 27px;
+    align-items: center;
+}

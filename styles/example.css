@@ -1,33 +1,33 @@
+.example {
+    padding: 70px 0;
+    background-image: linear-gradient(
+            #ffffff 0%,
+            #ffffff 25%,
+            #F2F2F2 25%,
+            #F2F2F2 100%);
+}
+
 .example__content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
-.example__title {
-    width: 100%;
+.example__content h2 {
     font-size: 60px;
-    padding: 76px 0;
-}
-
-.example__content-secondary {
-    background-color: var(--basic-gray);
-}
-
-.example__container {
-    display: flex;
 }
 
 .example__info {
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
     max-width: 436px;
 }
+
 
 .example__info p:not(.example__results p,.example__expenses p) {
     line-height: 1.5;
     color: var(--special-dark-grey);
     font-family: 'Arial';
+    margin-top: 146px;
 }
 
 .example__results {
@@ -85,4 +85,69 @@
     margin-top: 55px;
     font-size: 20px;
     text-transform: uppercase;
+}
+
+.example__range {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.example__range p {
+    text-transform: uppercase;
+}
+
+.example__custom-range {
+    -webkit-appearance: none;
+    width: 428px;
+    height: 6px;
+    background: #DCDCDC;
+    border-radius: 2px;
+}
+
+
+.example__custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #CDCDCD;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.example__custom-range::-webkit-slider-thumb::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #68B738;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+}
+
+
+.example__custom-range::-moz-range-thumb {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #CDCDCD;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.example__custom-range::-moz-range-thumb::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #68B738;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
 }
