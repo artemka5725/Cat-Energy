@@ -17,6 +17,10 @@
 
 }
 
-.navigation__item a {
+.navigation__list a {
     color: #ffffff;
+}
+
+.navigation__list_black a {
+    color: #000000;
 }
