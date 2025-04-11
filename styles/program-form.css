@@ -1,5 +1,6 @@
 .program-form__content {
     padding-top: 74px;
+    padding-bottom: 70px;
 }
 
 .program-form__content h1 {
@@ -92,7 +93,7 @@
     height: 18px;
     border-radius: 50%;
     top: 1px;
-    left: -48.5px;
+    left: -49px;
     transition-duration: 0.28s;
     transition-property: transform;
     transform: scale(0);

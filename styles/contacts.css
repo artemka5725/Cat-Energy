@@ -1,0 +1,24 @@
+.contacts__title {
+    width: 100%;
+    height: 2.5px;
+    background-color: var(--basic-green);
+}
+
+.contacts__content {
+    display: flex;
+    gap: 78px;
+    position: relative;
+}
+.contacts__content h2 {
+    font-size: 36px;
+    position: absolute;
+    left: -41px;
+    top: -21px;
+    background-color: #ffffff;
+    padding: 0 40px;
+
+}
+.contacts__content label {
+    display: flex;
+    gap: 20px;
+}
