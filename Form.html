@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/program-form.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+            <div class="header__logo">
+                <div class="logo">
+                    <a href="#"><img src="images/logo-desktop.svg" alt="Логотип"></a>
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__list navigation__list_black">
+                    <li class="navigation__item"><a href="./index.html">Главная</a></li>
+                    <li class="navigation__item"><a href="./catalog.html">Каталог продукции</a></li>
+                    <li class="navigation__item"><a href="#">Подбор программы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="program-form">
+        <div class="container">
+            <div class="program-form__content">
+                <h1>Подбор программы</h1>
+                <p>Заполните анкету, и мы подберем
+                    программу питания для вашего кота</p>
+                <form class="program-form__first-form">
+                    <div class="program-form__cat-info">
+                        <label for="name">Имя:* <input type="text" id="name" name="name" placeholder="Барсик">
+                        </label>
+                        <label for="weight">Вес (кг):*
+                            <input type="text" id="weight" name="weight" placeholder="7">
+                        </label>
+                        <label for="age">Возраст (лет):
+                            <input type="text" id="age" name="age" placeholder="7">
+                        </label>
+                    </div>
+                    <fieldset class="program-form__fieldset">
+                        <label for="skinny">
+                            <input type="radio" name="skinny" id="skinny" value="Похудение" checked>
+                            Похудение
+                        </label>
+                        <label for="fat">
+                            <input type="radio" name="fat" id="fat" value="Набор массы">
+                            Набор массы
+                        </label>
+                        <label for="doubt">
+                            <input type="radio" name="doubt" id="doubt" value="Не знаю (нужен ваш совет)">
+                            Не знаю (нужен ваш совет)
+                        </label>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
