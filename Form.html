@@ -46,20 +46,23 @@
                             <input type="text" id="age" name="age" placeholder="7">
                         </label>
                     </div>
-                    <fieldset class="program-form__fieldset">
-                        <label for="skinny">
-                            <input type="radio" name="skinny" id="skinny" value="Похудение" checked>
-                            Похудение
-                        </label>
-                        <label for="fat">
-                            <input type="radio" name="fat" id="fat" value="Набор массы">
-                            Набор массы
-                        </label>
-                        <label for="doubt">
-                            <input type="radio" name="doubt" id="doubt" value="Не знаю (нужен ваш совет)">
-                            Не знаю (нужен ваш совет)
-                        </label>
-                    </fieldset>
+                    <div class="program-form__fieldset">
+                        <div class="program-form__radio-block">
+                            <div></div>
+                            <input type="radio" name="skinny" id="skinny"  checked>
+                            <label for="skinny">Похудение</label>
+                        </div>
+                        <div class="program-form__radio-block">
+                            <div></div>
+                            <input type="radio" name="fat" id="fat">
+                            <label for="fat">Набор массы</label>
+                        </div>
+                        <div class="program-form__radio-block">
+                            <div></div>
+                            <input type="radio" name="doubt" id="doubt">
+                            <label for="doubt">Не знаю (нужен ваш совет)</label>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

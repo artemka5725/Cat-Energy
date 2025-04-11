@@ -33,19 +33,71 @@
 .program-form__cat-info input::placeholder {
     color: #444444;
     text-transform: uppercase;
-    padding-left: 20px;
     font-size: 20px;
 }
 
 .program-form__cat-info input[type="text"] {
     border: 1px solid #E7E7E7;
-    margin-left: 13px;
     height: 52px;
     width: 100%;
+    padding-left: 20px;
+}
+
+.program-form__cat-info label {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    gap: 13px;
 }
 
 .program-form__fieldset {
     display: flex;
     flex-direction: column;
     gap: 13px;
+    border: 1px solid #E7E7E7;
+    padding: 25px 0 0 28px;
+}
+
+.program-form__radio-block {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.program-form__radio-block div {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #CDCDCD;
+    border-radius: 50%;
+}
+
+.program-form__fieldset input[type="radio"] {
+    display: none;
+}
+
+.program-form__radio-block label {
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.program-form__radio-block label:before {
+    content: '';
+    position: absolute;
+    background-color: var(--basic-green);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top: 1px;
+    left: -48.5px;
+    transition-duration: 0.28s;
+    transition-property: transform;
+    transform: scale(0);
+}
+
+.program-form__radio-block input[type="radio"]:checked ~ label:before {
+    transform: scale(1.1);
 }
