@@ -37,7 +37,9 @@
 }
 
 .options__form input[type="checkbox"] {
-    display: none;
+    visibility: hidden;
+    position: absolute;
+
 }
 
 .options__form label:before {
@@ -57,10 +59,10 @@
     border-width: 0 2px 2px 0;
     transition-duration: 0.28s;
     transition-property: transform;
-    transform: rotate(45deg);
+    transform: rotate(45deg) scale(0);
 }
-.options__form label input[type="radio"]:checked ~ label:after {
-    transform: rotate(90deg);
+.options__form label input[type="checkbox"]:checked ~ label:after {
+    transform: scale(1);
 }
 
 .options__button {
