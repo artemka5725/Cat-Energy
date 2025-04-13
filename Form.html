@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/program-form.css">
     <link rel="stylesheet" href="styles/contacts.css">
+    <link rel="stylesheet" href="styles/comment.css">
+    <link rel="stylesheet" href="styles/options.css">
+    <link rel="stylesheet" href="styles/maps.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
 <header class="header">
@@ -73,15 +77,83 @@
         <div class="container">
             <div class="contacts__content">
                 <h2>Контактные данные (владельца кота)</h2>
-                    <label for="email"> E-mail:*
-                        <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+                <label for="email"> E-mail:*
+                    <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+                </label>
+                <label for="number">Телефон:*
+                    <input type="number" name="number" id="number" placeholder="8 (960) 900-60-90">
+                </label>
+            </div>
+        </div>
+    </section>
+    <section class="comment">
+        <div class="comment__title"></div>
+        <div class="container">
+            <div class="comment__content">
+                <h2>Комментарий</h2>
+                <textarea name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+        </div>
+    </section>
+    <section class="options">
+        <div class="options__title"></div>
+        <div class="container">
+            <div class="options__content">
+                <h2>Дополнительно</h2>
+                <form class="options__form">
+                    <label for="sweetener">
+                        <input type="checkbox" name="sweetener" id="sweetener" checked> Сахарозаменитель
                     </label>
-                    <label for="number">Телефон:*
-                        <input type="number" name="number" id="number" placeholder="8 (960) 900-60-90">
+                    <label for="water">
+                        <input type="checkbox" name="water" id="water"> Питьевая вода
                     </label>
+                    <label for="milk">
+                        <input type="checkbox" name="milk" id="milk"> Молоко
+                    </label>
+                    <label for="vitamins">
+                        <input type="checkbox" name="vitamins" id="vitamins"> Витамины
+                    </label>
+                </form>
+                <div class="options__button">
+                    <button>Отправить заявку</button>
+                    <p>* — Обязательные поля</p>
+                </div>
             </div>
         </div>
     </section>
 </main>
+<footer class="footer">
+    <section class="maps">
+        <div class="container">
+            <div class="maps__contacts">
+                <h4>приглашаем
+                    к сотрудничеству
+                    дилеров!</h4>
+                <div class="maps__address">
+                    <p>ул. Большая
+                        Конюшенная, д. 19/8</p>
+                    <p>Санкт-Петербург</p>
+                </div>
+            </div>
+            <img class="maps__pin" src="images/map%20pin.svg" alt="Точка на карте">
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4040.9654449830346!2d36.06064667299109!3d52.97050811582772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1743668018682!5m2!1sru!2sru"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="under">
+        <div class="container">
+            <div class="under__content">
+                <img src="images/footer-logo%202.svg">
+                <div class="under__socials">
+                    <img src="images/VK.svg" alt="VK">
+                    <img src="images/INST.svg" alt="Instagram">
+                    <img src="images/FACEBOOK.svg" alt="Facebook">
+                </div>
+                <img src="images/logo_html.svg" alt="Logo HTML Academy">
+            </div>
+        </div>
+    </section>
+</footer>
 </body>
 </html>

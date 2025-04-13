@@ -1,0 +1,28 @@
+.comment__title {
+    width: 100%;
+    height: 2.5px;
+    background-color: var(--basic-green);
+}
+.comment__content {
+    padding: 76px 0 67px 0;
+    position: relative;
+}
+.comment__content h2 {
+    font-size: 36px;
+    position: absolute;
+    left: -41px;
+    top: -21px;
+    background-color: #ffffff;
+    padding: 0 40px;
+}
+.comment__content textarea {
+    width: 100%;
+    min-height: 174px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border: 1px solid #E7E7E7;
+}
+.comment__content textarea::placeholder {
+    color:#444444;
+    text-transform: uppercase;
+}

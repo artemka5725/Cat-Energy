@@ -8,7 +8,9 @@
     display: flex;
     gap: 78px;
     position: relative;
+    padding: 76px 0 67px 0;
 }
+
 .contacts__content h2 {
     font-size: 36px;
     position: absolute;
@@ -18,7 +20,28 @@
     padding: 0 40px;
 
 }
+
 .contacts__content label {
     display: flex;
     gap: 20px;
+    width: 100%;
+    align-items: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #444444;
+}
+
+
+.contacts__content input {
+    border: 1px solid #E7E7E7;
+    height: 52px;
+    width: 100%;
+    padding-left: 20px;
+    position: relative;
+
+}
+
+.contacts__content input::placeholder {
+    text-transform: uppercase;
+    color: #444444;
 }
