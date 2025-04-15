@@ -52,3 +52,11 @@
     text-transform: uppercase;
 
 }
+.start-screen__content button:hover {
+        background-color: var(--basic-green-hover);
+}
+.start-screen__content button:active {
+    background-color: var(--basic-green-hover);
+    color: rgba(100%,100%,100%,0.3);
+
+}

@@ -62,6 +62,13 @@
     color: #ffffff;
     text-transform: uppercase;
 }
+.catalog__item button:hover {
+    background-color: var(--basic-green-hover);
+}
+.catalog__item button:active {
+    background-color: var(--basic-green-hover);
+    color: rgba(100%,100%,100%,0.3);
+}
 
 .catalog__item_show-more {
     display: flex;

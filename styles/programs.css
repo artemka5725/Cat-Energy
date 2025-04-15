@@ -34,14 +34,13 @@
     display: flex;
     gap: 26px;
     margin-top: 27px;
-}
-
-.programs__item a {
     font-family: 'Oswald';
     font-size: 20px;
     text-transform: uppercase;
     color: #000000;
-
+}
+.programs__item a:active {
+    opacity: 0.3;
 }
 
 .programs__item a img {

@@ -23,12 +23,17 @@
 
 .contacts__content label {
     display: flex;
+    position: relative;
     gap: 20px;
     width: 100%;
     align-items: center;
     white-space: nowrap;
     text-transform: uppercase;
     color: #444444;
+}
+.contacts__content label img {
+    position: absolute;
+    right: 20px;
 }
 
 
@@ -37,6 +42,7 @@
     height: 52px;
     width: 100%;
     padding-left: 20px;
+    padding-right: 60px;
     position: relative;
 
 }

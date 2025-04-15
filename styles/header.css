@@ -16,6 +16,15 @@
     text-transform: uppercase;
 
 }
+.navigation__item:hover {
+    opacity: 0.6;
+}
+.navigation__item-active {
+    border-bottom: 3px solid #ffffff;
+}
+.navigation__item-black-active {
+    border-bottom: 3px solid var(--basic-green);
+}
 
 .navigation__list a {
     color: #ffffff;
@@ -23,4 +32,11 @@
 
 .navigation__list_black a {
     color: #000000;
+}
+
+.header__logo .logo a:hover {
+    opacity: 0.8;
+}
+.header__logo .logo a:active {
+    opacity: 0.6;
 }

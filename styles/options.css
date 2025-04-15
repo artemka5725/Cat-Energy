@@ -23,46 +23,53 @@
 }
 
 .options__form {
-    display: flex;
-    gap: 104px;
     font-size: 20px;
     text-transform: uppercase;
-}
-
-.options__form label {
     display: flex;
-    gap: 20px;
+    gap: 104px;
     align-items: center;
     position: relative;
+    justify-content: center;
 }
 
-.options__form input[type="checkbox"] {
-    visibility: hidden;
-    position: absolute;
-
+.options__checkbox {
+    display: flex;
+    gap: 19px;
+    align-items: center;
 }
 
-.options__form label:before {
-    content: '';
+.options__checkbox span {
     width: 40px;
     height: 40px;
     border: 1px solid #E7E7E7;
+    display: block;
 }
-.options__form label:after {
-    content: '';
+
+.options__checkbox input[type="checkbox"] {
     position: absolute;
-    left: 16px;
-    top: 10px;
+    z-index: -1;
+    opacity: 0;
+
+}
+
+.options__checkbox label {
+    position: relative;
+}
+
+.options__checkbox label:before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
     width: 10px;
     height: 16px;
     border: solid var(--basic-green);
     border-width: 0 2px 2px 0;
-    transition-duration: 0.28s;
-    transition-property: transform;
     transform: rotate(45deg) scale(0);
 }
-.options__form label input[type="checkbox"]:checked ~ label:after {
-    transform: scale(1);
+
+.options__checkbox input:checked ~ label:before {
+    transform: rotate(45deg) scale(1);
 }
 
 .options__button {
@@ -71,14 +78,16 @@
     width: 100%;
     align-items: center;
 }
+
 .options__button button {
     max-width: 568px;
     height: 52px;
     background-color: var(--basic-green);
     text-transform: uppercase;
-    color:#ffffff;
+    color: #ffffff;
     flex: 1;
 }
+
 .options__button p {
     font-size: 16px;
     font-family: "Arial";

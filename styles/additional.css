@@ -37,6 +37,7 @@
     font-size: 20px;
     color: #222222;
 }
+
 .additional__table .column-2,
 .additional__table .column-3 {
     font-family: "Arial";
@@ -50,4 +51,30 @@
     background-color: var(--basic-green);
     padding: 7px 26px;
     font-family: 'Oswald';
+}
+
+.additional__table button:hover {
+    background-color: var(--basic-green-hover);
+}
+
+.additional__table button:active {
+    background-color: var(--basic-green-hover);
+    color: rgba(100%, 100%, 100%, 0.3);
+}
+
+.additional__gift {
+    background-image: url("../images/gift-photo-desktop.png");
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 46px;
+    padding: 56px 43px 42px 41px;
+}
+
+.additional__gift p {
+    max-width: 220px;
+    color: #FFFFFF;
+    font-family: "Arial";
+    text-align: center;
+    line-height: 20px;
 }
