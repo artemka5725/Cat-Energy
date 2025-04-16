@@ -48,4 +48,7 @@
         position: static;
         max-width: none;
     }
+    .maps__contacts_alt {
+        background-color: var(--basic-gray);
+    }
 }

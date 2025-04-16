@@ -15,7 +15,7 @@
     max-width: 30%;
 }
 
-.program-form__content .program-form__first-form {
+.program-form__first-form {
     margin-top: 66px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -101,4 +101,19 @@
 
 .program-form__radio-block input[type="radio"]:checked ~ label:before {
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .program-form__first-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .program-form__content p {
+        max-width: 323px;
+    }
+    .program-form__fieldset {
+        padding-bottom:25px;
+    }
+
 }

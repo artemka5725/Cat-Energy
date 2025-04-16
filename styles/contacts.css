@@ -31,6 +31,7 @@
     text-transform: uppercase;
     color: #444444;
 }
+
 .contacts__content label img {
     position: absolute;
     right: 20px;
@@ -50,4 +51,11 @@
 .contacts__content input::placeholder {
     text-transform: uppercase;
     color: #444444;
+}
+
+@media (max-width: 768px) {
+    .contacts__content {
+        flex-direction: column;
+        gap: 20px;
+    }
 }

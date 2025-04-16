@@ -78,3 +78,17 @@
     text-align: center;
     line-height: 20px;
 }
+
+@media (max-width: 768px) {
+    .additional__content {
+        flex-direction: column;
+    }
+    .additional__gift {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .additional__gift p {
+        max-width: 160px;
+        text-align: start;
+    }
+}

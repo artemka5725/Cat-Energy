@@ -103,3 +103,10 @@
     padding: 9px 36px;
     text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+    .catalog__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

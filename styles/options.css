@@ -92,3 +92,18 @@
     font-size: 16px;
     font-family: "Arial";
 }
+@media (max-width: 768px) {
+    .options__form {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        gap: 32px;
+
+    }
+    .options__button {
+        max-width: 565px;
+    }
+    .options__button button {
+        padding:13px 45px;
+    }
+
+}
