@@ -11,3 +11,10 @@ body {
     font-family: 'Oswald';
     line-height: 1;
 }
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 708px;
+        padding: 0 10px;
+    }
+}

@@ -69,3 +69,12 @@
     font-family: 'Arial';
     line-height: 1.5;
 }
+@media (max-width: 768px) {
+    .manual__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap:150px;
+    }
+    .manual__item {
+        max-width: 230px;
+    }
+}

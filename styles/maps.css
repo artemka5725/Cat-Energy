@@ -39,3 +39,13 @@
     right: 500px;
 
 }
+@media (max-width: 768px) {
+    .maps__pin {
+        top: 331px;
+        right: 326px;
+    }
+    .maps__contacts {
+        position: static;
+        max-width: none;
+    }
+}

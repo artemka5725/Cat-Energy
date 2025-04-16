@@ -40,3 +40,19 @@
 .header__logo .logo a:active {
     opacity: 0.6;
 }
+
+@media (max-width: 768px) {
+    .header__logo {
+        width: 174px;
+        height: 52px;
+    }
+    .navigation__item a {
+        color:#000000;
+        font-size: 18px;
+        line-height: 24px;
+
+    }
+    .navigation__item-active {
+        border-bottom: 3px solid var(--basic-green);
+    }
+}

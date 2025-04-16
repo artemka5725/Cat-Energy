@@ -52,11 +52,29 @@
     text-transform: uppercase;
 
 }
+
 .start-screen__content button:hover {
-        background-color: var(--basic-green-hover);
+    background-color: var(--basic-green-hover);
 }
+
 .start-screen__content button:active {
     background-color: var(--basic-green-hover);
-    color: rgba(100%,100%,100%,0.3);
+    color: rgba(100%, 100%, 100%, 0.3);
 
 }
+
+@media (max-width: 768px) {
+    .start-screen .background-cat {
+        display: none;
+    }
+
+    .start-screen__content {
+        flex-direction: column;
+    }
+
+    .start-screen__content img {
+        top: -79px;
+        z-index: -1;
+    }
+}
+
